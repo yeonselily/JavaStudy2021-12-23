@@ -14,7 +14,7 @@ public class Car {
 	private String model; 
 	private int serialNumber; 
 	
-//overoad
+//oveload
 	public Car() {
 		System.out.println(carNumber);
 		System.out.println(model);		
@@ -59,9 +59,14 @@ public class Car {
 	}
 
 
+	public void setCarNumber(String carNumber) {
+		this.carNumber = carNumber;
+	}
+
+
 	public void setSerialNumber(int serialNumber) {
 		this.serialNumber = serialNumber + 20210000;
 	}
 	
-
+	
 }

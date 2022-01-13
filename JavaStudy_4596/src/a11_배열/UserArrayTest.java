@@ -17,8 +17,6 @@ public class UserArrayTest {
 			users[i].showUserInfo();
 		
 		}
-		
-		
 
 	}
 

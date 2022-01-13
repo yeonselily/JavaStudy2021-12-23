@@ -16,9 +16,9 @@ public class ClassEx {
 		int studentYear4 = 4; 
 		
 		System.out.println(name1 + "학생의 학년은 " + studentYear1 + "학년입니다.");
-		System.out.println(name1 + "학생의 학년은 " + studentYear2 + "학년입니다.");
-		System.out.println(name1 + "학생의 학년은 " + studentYear3 + "학년입니다.");
-		System.out.println(name1 + "학생의 학년은 " + studentYear4 + "학년입니다.");
+		System.out.println(name2 + "학생의 학년은 " + studentYear2 + "학년입니다.");
+		System.out.println(name3 + "학생의 학년은 " + studentYear3 + "학년입니다.");
+		System.out.println(name4 + "학생의 학년은 " + studentYear4 + "학년입니다.");
 
 	}
 

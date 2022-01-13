@@ -6,7 +6,7 @@ public class ArrayEx {
 		int[] num = new int[10000]; 
 		
 		
-		for(int i =0; i < num.length; i++) {
+		for(int i = 0; i < num.length; i++) {
 			num[i] = 10 * (1+i);
 		}
 		
@@ -14,7 +14,7 @@ public class ArrayEx {
 			System.out.println(num[i]);
 		}
 		
-		String[] strArray = {"김준일","김준이", "김준삼"}; 
+		String[] strArray = {"일","이", "삼"}; 
 		for(int i = 0; i <strArray.length; i++) {
 			System.out.println(strArray[i]);
 		}

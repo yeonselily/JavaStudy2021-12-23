@@ -11,7 +11,7 @@ public class Teacher extends Person{
 	private int classYear;
 	private int classGroup;
 	
-	
+		
 	public String getSubject() {
 		return subject;
 	}
@@ -37,13 +37,13 @@ public class Teacher extends Person{
 	}
 
 	public void studyClass() {
-		System.out.println( + "선생님이 수업을 합니다.");
-		// 000 선생님이 수업을 합니다. 
+		System.out.println(super.getName() + "선생님이 수업을 합니다.");
+		
+		
 	}
+		// 000 선생님이 수업을 합니다. 
+}
 
 	// 사람의 showInfo 메소드 오버라이딩 후 선생님정보 출력 
 	
-	public void showInfo();
-	
-	
-}
+
