@@ -1,8 +1,8 @@
 package a19_제네릭;
 
 public class GenericEx {
-	
-	public Message<?> sendMessage(int select) {
+	// ? 와일드 카드 
+	public Message<? extends User> sendMessage(int select) {
 		if(select == 1) {
 			PersonalUser personalUser = new PersonalUser("park se yeon"); 
 			return new Message<PersonalUser>(10, personalUser); 
@@ -16,7 +16,7 @@ public class GenericEx {
 	}
 
 	public static void main(String[] args) {
-		//class에 메게변수 객체의 형태를 전달한다  <> 
+		//class에 메게변수 객체의 형태를 전달한다  <> 제네릭 
 		/*
 		Message<String> strMessage = new Message<String>(); 
 		strMessage.setCode(10);
