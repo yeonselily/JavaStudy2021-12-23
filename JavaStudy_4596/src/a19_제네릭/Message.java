@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Message<T extends User> {
+public class Message<T,E extends User> {
 	private int code;
 	private T data; 
-	
+	private E data2; 
 	
 }
