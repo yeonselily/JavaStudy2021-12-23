@@ -3,7 +3,7 @@ package a07_조건;
 public class SwitchCase {
 
 	public static void main(String[] args) {
-		char select = 'D'; 
+		char select = 'A'; 
 		
 		switch(select) { 
 		case 'A': 

@@ -37,10 +37,9 @@ import java.util.Vector;
  * @author  Anil Hemrajani
  */
 public class DBConnectionMgr {
-
-    private Vector connections = new Vector(10);
-    private String _driver = "org.gjt.mm.mysql.Driver",
-    _url = "jdbc:mysql://127.0.0.1:80/java?useUnicode=true&characterEncoding=EUC_KR",
+	private Vector connections = new Vector(10);
+    private String _driver = "org.mariadb.jdbc.Driver",
+    _url = "jdbc:mariadb://127.0.0.1:8001/company?useUnicode=true",
     _user = "root",
     _password = "toor";
     
