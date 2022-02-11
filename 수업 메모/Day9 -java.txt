@@ -1,0 +1,36 @@
+class 
+틀- 형채가 없음 
+인스턴스 - 형채가 있음 
+heap memory 찍어내서 그 데이터를 저장함 - 과정을 생성으로 부름 반납을 소멸 , 자바에서는 소멸 필요 없고 가비지 컬렉터가 알아서 해줌 
+생성되면 주소값이 만들어진다. 
+이 주소값을 저장하는 것이 바로 Car c1 = new Car("43다 1317","k3);
+c1에 주소값을 저장 
+Car안에 메모리 주소 할당 함, 자료형 일치하는 것만  
+public class Car 
+	private String carNumber;
+	
+	public Car(){} 기본생성자(반환값 명시 불필요, 클레스 이름 일치, 메소드 똑같다) 
+	
+	public Car(String carNumber, String model)
+		sysout(this);
+		this.carNumber = carNumber;
+생성자 public 
+getter setter 
+public String getCarNumber(){
+return carNumber;}
+
+public void setCarNumber(String carNumber) {
+		this.carNumber = carNumber;
+	}
+
+
+참조 실행 
+c1.setSerialNumber  
+
+네모 세모 동그라미 -각각의 클레스 
+
+찍어낼때 속성이 있다- 사각형은 가로와 세로의 길이 
+
+각각의 클래스는 틀을 가지고 여러형태의 객체를 만들어 낼 수 있다.  
+
+

@@ -1,0 +1,15 @@
+반복문 
+조건 중요 
+
+boolean자료형 네모 = true; 
+                            = false; 
+ 
+while(true) 
+for( ;true; )  무한반복  
+
+
+for문 밖 (전역) 
+int i =0;
+for ( int i=0; ) 
+변수 영향 있음 
+(지역) 안에 넣으면 불가능 

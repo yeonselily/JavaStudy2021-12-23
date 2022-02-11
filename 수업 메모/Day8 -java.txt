@@ -1,0 +1,82 @@
+클래스 
+class (설계도 틀 ), 
+object (클래스를 통해 구현 할 수 있는 모든 대상, 클래스의 인스턴스로 표현함), 
+instance (객체가 실제로 구현된 것)  
+
+변수 메소드 대문자 원래 불가능 
+
+Box box = new Box(); 
+자료형      생성자(인스턴스) 
+
+
+null = 주소 0 
+0번째 주소 = 값이 없다. 
+
+
+메모리
+data, stack(program 실행), heap(여유공간) 
+data, stack(program 실행, 지정해줌?), heap(여유공간, 메모리를 빌려쓸 수 있음 생성될때.) 
+
+객체 = 데이터 + 기능(메소드)  
+
+
+
+캡슐화 ㅁㅔ소드가 보호하고 있는 모습이 캡슐  getter setter 
+접근지정자 
+생성자 활용법 data는 private, 생성자나 메소드 이용 (모든 변수 private, 메소드 public)
+기본 생성자 overloading 할시 만들어야 한다.  
+
+getter 
+가져다 주는 녀석 
+
+setter
+세팅해 주는 녀석 
+ 
+
+literal constant 
+어디서 정해져 있는 수 
+변수 명: 1
+1 문자안에 1 값 들어있고 바뀌지 않음  
+정해져 준 것이 아닌 ! 
+
+박세연 - 리터럴 상수 
+리터럴의 주소 같음 ! 그 리터럴의 주소가 담겨 있는 것임 
+String name1 = "박세연";
+String name2 = "박세연"; 
+ System.out.println("name1, name2: " + (name1 == name2)); 참 
+
+
+버퍼 scanner 
+new 작업 
+
+
+String 
+object class 
+equals()
+String class override 
+literal 비교 
+
+
+
+
+package a17_기본클래스;
+
+import java.util.Scanner;
+
+public class StringObject {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		String name1 = "박세연";
+		String name2 = "박세연"; 
+		System.out.println("이름입력: ");
+		String name3 = scanner.nextLine();
+		String name4 = new String("박세연"); 
+		
+		System.out.println("name1, name2: " + (name1 == name2));
+		System.out.println("name1, name3: " + (name1 == name3));
+		System.out.println("name1, name4: " + (name1 == name4));
+	}
+
+}

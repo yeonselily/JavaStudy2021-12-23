@@ -1,0 +1,168 @@
+익명클래스 
+
+package a15_무명클래스;
+/**
+ * 무명 익명 클래스 
+ * @author ITPS
+ *
+ */
+class Test extends AnonymousClass {
+	@Override
+	public void showInfo() {
+		System.out.println("테스트 정의");
+		
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		AnonymousClass anonymousClass = new AnonymousClass() {
+			
+			@Override
+			public void showInfo() {
+				// 클래스 저장하면 스텍메모리 잡아먹어서 재사용 하지 않을때 사용 
+				// stack memory 낭비 안함 
+				// 버튼 클릭 이벤트 버튼 여러개 만들 필요 없음 기능 똑같으면 
+				// click 메소드  event, (mouse) click,down, up
+				// override 추상클래스 
+				// 재정의 안되면 생성 자채를 할 수 없음 
+				// AnonymousClass anonymousClass = new AnonymousClass() 이렇게 안됨 
+				System.out.println("test1입니다.");
+			}
+		};
+		AnonymousClass anonymousClass2 = new AnonymousClass() {
+			@Override
+			public void showInfo() {
+				System.out.println("test2입니다.");
+				
+			}
+		};
+		// 재사용 못하고 복사 붙여넣기 해야함. 
+		anonymousClass.showInfo();
+		anonymousClass2.showInfo();
+		
+		// 재사용 함 
+		Test test1 = new Test();
+		Test test2 = new Test();
+		Test test3 = new Test();
+		Test test4 = new Test();
+		Test test5 = new Test();
+	
+	}
+
+}
+
+
+
+인터페이스 
+인터(뭐랑 뭐 사이 ) + 페이스(얼굴) 
+서로 대면하고 있다 마주보고 있다 
+서로 소통을 하고 있다 
+
+통신 (전자 통신, 프로그램 안에서 네트워크 통신, 모니터 뒤 html 케이블 단자 모양이 똑같음)
+
+빔 프로젝트 (html 단자- 화면 송출하기위해서 씀 
+
+티비 모니터 (html 단자 
+
+컴퓨터 본체(그래픽 카드, html 단자  
+
+thml 케이블 본체가 부품을 끼워넣을 수 있음(빔, 모니터).
+인터페이스가 같으면 끼워넣을 수 있다 
+
+ 빔, 모니터, 본체: 클레스 
+인터페이스 잘 구현하면 객체지향 프로그램을 잘 한다. 
+
+메인 페이지 ( 광고, 설문조사  ): 칸은 유지, 기능만 바뀜, 부품만 바뀜 
+인터페이스 같아야함 광고 설문 연결하기 위해서 
+ 부품별로되어야함 클래스가 부품화 되어야함 
+
+
+바퀴 (휠 살 부품하나하나) 
+조립 되어 하위의 모든 짝은거까지 부품화 시킴 
+
+광고 바꿔달라고하면 따른 쪽 지장 없게 하기 위해 
+
+바퀴는 바퀴의 기능 
+인터페이스가 같다 연결하는 홀만 같으면 크기는 바꿔도 바꿀 수 있다. 
+
+ 인터페이스를 잘 알야함. 
+
+
+상속 ( 여러개 상속할 수 없다) 
+나의 진짜 친아빠는 한명밖에 없다 
+
+프로그래밍도 마찬가지 부모는 한명 밖에 없다 1 대 일 
+새아빠 상속 허용 안함 
+
+인터페이스 구현  다중 구현이 다능 
+implements (not extends) 
+
+
+본체 usb html vga 단자들 ram 선 
+하나하나가 인터페이스 
+클래스에다가 여러개 인터페이스 붙일 수 있다. 
+ 
+
+상속은 하나밖에  구현을 여러가지 
+추상메소드 인터페이스 익명 메소드 똑같은 방법 
+
+
+1 대일 상속 VS 여러 구현(기능적 부분) upcasting downcasting  
+
+사람 추상클래스 
+
+상속받아서 아버지 만들고 상속밭아서 어머니 클래스 만들수 있다 
+
+사람 동물 아버지 (불가능) 
+
+상속은 상관 관계가 있어야 함 . 아버지는 사람. 
+
+기계(끄는거) 클래스읶고 본체가 있다 또한 마우스도 있다. 리모컨도 기계다 상속임 (관계가 있으니까, 상관관계) 
+스위치는 on & off 의 기능이 있다. - 구현 
+마우스,리모컨(전원버튼 볼륨 메뉴 외부입력 버튼)은 스위치, 회로(전류 흐름 동작) 
+ 
+  
+클래스가 기계이면 상속을 해야하고 : 클레스가 마우스, 리모컨
+클래스가 스위치면 스위치 기능을 가지고 있으면 인터페이스이다.: 클레스가 스위치, 회로 기능 포함 
+
+
+
+
+
+추상클래스는 일반 메소드 
+인터페이스는 원래 추상 메소드다 
+
+default void onClick(); 구현필요 일반 메소드로 바꿀 수있다. 
+
+
+중앙제어 시스템( 모든 강의실 에어컨 버튼 켜지게 만듬 ) 
+A class B class C class 개수 시기 기능다름 하지만 에어컨 켠다라는 메소드 동작은 같다  
+똑같은 명령으로 다른 기능을 시킴 
+에이 2 대
+ 비 강의장 3 대 에어컨 
+
+공장 라인들마다 만드는게 다름 기계도 다름 
+공장 가동 명령은 같음 
+각각 실행은 다르지만 돌아가게끔 동시에 만들수 있다 인터페이스가 같기 때문에 크기 상관없이 
+
+
+nullpointerexception 
+
+CONTINUE 필요 3 ,4,5 객체가 없어서 NULL 실행 못해줌 
+
+다음 반복으로 넘어가라 CONTINUE 필요함 오류 없애주기 위해서  
+
+
+
+
+
+
+
+
+
+
+
+
+

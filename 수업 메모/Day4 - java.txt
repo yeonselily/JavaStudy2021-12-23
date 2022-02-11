@@ -1,0 +1,52 @@
+제어 흐름 
+조건문, 반복문 
+
+흐름도 - 프로그램에서 수행되어지는 흐름을 도식화해 문서화한 것 
+생산성 부분과 직결됨 
+전체 흐름 
+실수 줄임
+
+라운드 처리 사각형 시작 끝 
+직사각형 변수 선언 대입하는 처리문 (동작)
+마름모 조건 나타냄  
+화살표 프로그램의 흐름 표현 
+
+사이트 : https://sites.google.com/view/kji-java/index  
+           https://app.diagrams.net/
+
+https://www.acmicpc.net/step
+
+
+조건문 
+if, else if, else, switch-case 
+
+if(조건 ) -> 참 
+
+else 
+
+*swith
+case 
+해당 조건에 맞는 case를 찾는 문법 
+
+*break
+제어문 탈출 
+
+
+*반복문 
+for, while, continu, break 
+foreach 
+do while 
+
+
+1~ 100 까지 더하세요. 
+동일한 ㄱㅖ산 또는 명령을 순차적으로 반복해야하는 경우 
+
+
+* while 
+while (조건식){작업문;} 
+
+*for(시작조건;종결조건;조건 변화 수식){명령문;} 
+
+
+알고리즘 https://code.plus/course/41
+문제를 해결할 수 있는 공식 

@@ -1,0 +1,48 @@
+set 줄 세움 
+
+static 
+stack memory 
+
+Class student{ 
+
+public phone; // heap memory 
+
+public static name; // stack 영역에 객체를 만들지 않아도 저장공간이 있음 
+}
+
+공유함 - 전역의 영역 
+
+ 
+Student.phone 
+
+
+class System {
+static out = new object; 
+System.out.println(); 
+
+String 형변환 
+
+
+<Single tone >
+Class LG {
+private LG() {
+}  // 생성자 private 
+
+}
+
+
+Class Main {
+LG lg = new LG(); // 호출 못함 외부 생성 불가능함 
+}
+-> static을 사용해야함 
+
+정적 database( ms sql, oracle db, mariadb, mysql)
+orachle database 
+ms sql  database
+sun micro 있던 마이세스퀴엘  
+오라클 마이세스퀴엘 인수 -> 유료화  
+하지만 다른 데이타베이스 
+마리아티비 99 비슷 무료임 
+
+동적 database
+mongodb

@@ -1,0 +1,36 @@
+java.base package 
+-> java folder (lang, util, time package) 
+
+Object.java 
+Object Class = 최상위 클래스 
+객체
+
+다중 상속 안됨 extends Object 항상 생략 되어 있다 ! 
+
+
+native 추상 매소드 
+public final native Class<?> getClass(); 
+native Object class 에서 사용 
+
+
+
+왜 ??? 
+객체 비교 ! 
+상속 오버라이드 메소드 
+
+
+3. toString()
+hashcode 
+equals 
+
+
+@Getter, @Setter
+@ToString
+@AllArgsConstructor, @AllArgsConstructor, @NoArgsConstructor
+@EqualsAndHashCode
+@Builder
+@Data
+
+https://projectlombok.org/download
+https://advenoh.tistory.com/24
+https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.22

@@ -1,0 +1,140 @@
+data 저장 과거 
+데이타베이스 서버
+
+서버의 종류 database management system 
+mariadb 
+mongodb 
+oracle db 
+
+생성 수정 삭제 조회 
+항상 최신의 데이터 유지 
+CRUD 
+create read uddate delete  
+
+SQL 
+Structed Query Language 
+DDL CREATE DROP ALTER 데이타베이스 테이블 생성 삭제 그 구조 변경 
+DML INSERT DELETE UPDATE SELECT  ㄷ[어타베이스 데이타를 처리 조회 검색 명령어 
+DCL GRANT REVOKE
+
+
+
+server 
+client pc
+data rquest (피시 ip 주소 먼저 알고 찾아가기, TCP port : 3306, 
+
+8001 )
+
+192.168.01:3306 / db 명      사용할려면 접속해야한다 
+              동 
+
+jdbc:,ysql 
+
+naver.com 네이버로 요청 / 페이지로 리턴 ! 
+네이버 ip주소 
+이름 : naver.com
+addresses L 202.179177.21 
+
+
+server 존재에게 client 요청 
+요청에 대한 응답 
+
+
+
+https://offbyone.tistory.com/199
+
+primary key 
+
+mst master 상위 
+dtl detail
+
+
+
+java
+company
+table - user_dtl, user_mst
+
+#DML(CRUD)
+
+#Create (Insert Into)
+INSERT INTO 
+	#테이블 명
+	user_mst(
+	user_code, 
+	username,
+	PASSWORD,
+	NAME,
+	email,
+	create_date,
+	update_date)
+VALUES(	
+	0,
+	'yeon', 
+	'1234',
+	'박세연',
+ 	'@naver.com',
+ 	NOW(),
+ 	NOW()
+ 	
+); 
+
+#################################################
+INSERT INTO 
+	#테이블 명
+	user_mst
+VALUES(	
+	0,
+	'yeon2', 
+	'1234',
+	'박세연',
+ 	'@naver.com',
+ 	NOW(),
+ 	NOW()
+); 
+
+
+
+#######################################################
+SELECT 
+	* 
+FROM 
+	product_mst	
+WHERE 
+	category_code = 1; 	
+	
+SELECT 
+	* 
+FROM 
+	product_mst	user_mst
+WHERE 
+	category_code = 2; 
+	
+
+select 
+  um.user_code,
+  um.username,
+  um.password, 
+  um.name, 
+  um.email, 
+  ud.phone, 
+  ud.addr
+FROM  
+	user_mst um 
+	INNER JOIN user_dtl ON(ud.user_code = um.user_code)
+; 	
+		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

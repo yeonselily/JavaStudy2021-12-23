@@ -1,0 +1,6 @@
+confrim (yes or  no) return: true 0 false 1
+showInputDialog 임력 return: string  
+
+창위에다가 메세지를 띄우겟다 
+해당 이벤트가 일어난 창에 띄우겠다 
+null 

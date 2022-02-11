@@ -1,0 +1,20 @@
+https://bbbicb.tistory.com/44 
+DAO / Repository 
+
+
+Containers 
+Layouts 
+Components-JFrame, contentPane (panel)프레임은 같은에 패널이 달라지는 것임 
+알림창 오케이 확인 취소 뜨는것을 프레이ㅣㅁ의 종류중에서 다이로그라고 함
+
+부품들이 컴포넌츠 정렬 배치기준이 레이아웃 
+프레임안에 판대기를 여러가지 씌울 수 있고 정렬방식은 레이아웃  
+
+
+boardarlayout (동 서 남북)
+
+flowlayout
+
+cardlayout ㅋ타드덱처럼 딱지  
+gridlayout 표 사용 
+absolue layout 원하는대로 

@@ -1,0 +1,27 @@
+자바 프로그래밍 실행 환경 구축 
+
+1. JDK 설치 11version. 6~8 (Java Development Kit)\
+               a. 구글에 jdk 11 download 검색 
+               b. 오라클 사이트 접속(jdk11 download) 
+               c. 회원가입 (영어이름, 직책:학생, 직장 전화:02-0000-0000, 회사명:없음, 주소:없음, 시/군/구 모름, 우편번호 00000 
+               d. 로그인해서 다운받기 
+               e. jdk 11 설치 검색 
+               f. https://crazykim2.tistory.com/478 따라하기 
+ 
+2. 이클립스 설치 (최신버전) 
+               a. 이클립스는 설치 프로그램이 아니다. 압축푼다. 폴더 옮겨도 상관 없음. 
+               b. 구글 검색창에 이클립스 검색
+               c. 이클립스 홈페이지 접속 
+
+3. 이클립스 환경설정 
+                a. 인코딩 설정 utf 8 unicode : window -> preferences -> search "encoding" 
+-> Content Types
+ -> Java Class File 선택후 Default encoding에 utf-8입력 -> click update <text에서 java로 시작하는거 3 개 파일 utf-8로 update> 
+
+-> Workspace도 text file encoding을  Other 선택 후 UTF-8로 지정 
+-> Apply and Close  
+
+                 b. 폰트 설정( D2Coding ): 구글에 D2Coding 검색
+                     -> 1.3.2 버전 다운로드 및 (D2CodingAll) 설치  
+                     -> window -> preferences -> search "font"
+                     -> Colors and Fonts -> Basic -> Text Editor Block Selection Font, Text Font 둘다 D2Coding 폰트로 변경 -> Apply                          and Close    
